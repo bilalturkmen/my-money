@@ -27,7 +27,7 @@ const NavBar = () => {
                 <span className="hover-underline-animation">Login</span>
               </Link>
               <Link
-                to="/signup"
+                to="/register"
                 className="  text-indigo-500  py-1 px-3 focus:outline-none hover:underline   ml-2 hover:text-indigo-900 transform scale-1 "
               >
                 <span className="hover-underline-animation"> Register</span>

@@ -23,7 +23,7 @@ function App() {
                 <Route path="*" element={<Notfound />} />
               </Route>
               <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
+              <Route path="/register" element={<Signup />} />
             </Routes>
           </div>
           <div className="col-span-2 mt-3  ">
