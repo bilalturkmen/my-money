@@ -1,7 +1,7 @@
 export default function SocialMedia() {
   return (
     <>
-      <div className="text-md text-center  block ">
+      <div className="text-sm text-center block ">
         <p>
           This is a financial expense list, developed with react js and firebase
           database. And used Tailwind CSS in page designs.

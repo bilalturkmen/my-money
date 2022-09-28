@@ -10,7 +10,7 @@ export default function RegisterForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    signup(email, password, displayName);
+    console.log(email, password, displayName);
   };
 
   return (
@@ -95,6 +95,9 @@ export default function RegisterForm() {
         {!isPending && (
           <button
             type="submit"
+            onClick={() => {
+              alert("user registration disabled for this demo");
+            }}
             className="
       w-full
       px-6
@@ -117,7 +120,7 @@ export default function RegisterForm() {
             Sign up
           </button>
         )}
-        {isPending && (
+        {/* {isPending && (
           <button
             type="submit"
             disabled
@@ -142,7 +145,7 @@ export default function RegisterForm() {
           >
             Loading...
           </button>
-        )}
+        )} */}
         {error && <p className="p-3 text-red-600">{error} </p>}
 
         <p className="text-gray-800 mt-6 text-center">
