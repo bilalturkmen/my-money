@@ -1,7 +1,11 @@
 export default function SocialMedia() {
   return (
     <>
-      <div className="text-xs text-center  block tracking-wider">
+      <div className="text-md text-center  block ">
+        <p>
+          This is a financial expense list, developed with react js and firebase
+          database. And used Tailwind CSS in page designs.
+        </p>
         Based on Shaun Pelling's React js course. Developed by Bilal Türkmen
       </div>
       <div className="flex justify-center items-center gap-4 my-3">
