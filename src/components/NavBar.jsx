@@ -14,7 +14,7 @@ const NavBar = () => {
           <img className="  w-8 cursor-pointer" src={Logo} alt="Logo" />
           <span className="md:ml-3 ml-2  font-bold">My Money</span>
           <span className=" italic border-l ml-4 pl-4 hidden md:block ">
-            Account Management App
+            financial expenses list
           </span>
         </Link>
         <nav className="  flex items-center justify-end  flex-1 ">

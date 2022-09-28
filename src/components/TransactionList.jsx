@@ -4,7 +4,7 @@ export default function TransactionList({ transactions }) {
   const { deleteDocument, response } = useFirestore("transactions");
 
   return (
-    <ul>
+    <ul className="mt-5">
       {transactions.map((transaction) => (
         <li
           key={transaction.id}

@@ -42,9 +42,7 @@ export const useFirestore = (collection) => {
 
   // only dispatch is not cancelled
   const dispatchIfNotCancelled = (action) => {
-    if (!isCancelled) {
-      dispatch(action);
-    }
+    dispatch(action);
   };
 
   // add a document
@@ -74,10 +72,6 @@ export const useFirestore = (collection) => {
       dispatchIfNotCancelled({ type: "ERROR", payload: "could not delete" });
     }
   };
-
-  useEffect(() => {
-    return () => setIsCancelled(true);
-  }, []);
 
   return { addDocument, deleteDocument, response };
 };
